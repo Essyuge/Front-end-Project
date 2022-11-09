@@ -19,4 +19,46 @@ const ProjectList = ({
     // useRouteMatch used to access the url without any query parameters
     const { url } = useRouteMatch(); 
 
+    console.log('useLocation() search', search);
+  console.log('useRouteMatch url', url);
+
+
+  const projectItems = projects.map((project) => {
+    return (
+      <ProjectListItem
+        key={project.id}
+        project={project}
+        onProjectEdit={onProjectEdit}
+        onProjectDelete={onProjectDelete}
+      />
+    );
+  });
+
+  const handleOnChange = (e) => setSearchInputText(e.target.value);
+
+  useEffect(() => {
+    const scheduledUpdate = setTimeout(() => {
+      setSearchQuery(searchInputText);
+
+      if (searchInputText) {
+        history.push(`${url}?${new URLSearchParams({q: encodeURI(searchInputText)}).toString()}`)
+      } else {
+        history.push(`${url}`)
+      }
+    }, 300)
     
+    return () => {
+      clearTimeout(scheduledUpdate);
+    }
+  }, [setSearchQuery, searchInputText, history, url])
+
+  useEffect(() => {
+    setSelectedCategory(category);
+  }, [category, setSelectedCategory])
+
+  useEffect(() => {
+
+    setSearchInputText(new URLSearchParams(search).get('q'))
+  }, [search])
+
+  

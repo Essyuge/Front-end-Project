@@ -43,3 +43,40 @@ function ProjectsContainer() {
       const onProjectDelete = (projectId) => {
         setProjects(projects => projects.filter(p => p.id !== projectId))
       };
+
+      return (
+        <>
+          <Switch>
+            <Route path="/books/:id/edit">
+              <ProjectEditForm
+                onUpdateProject={onUpdateProject}
+              />
+            </Route>
+            <Route path="/books/new">
+              <ProjectForm onAddProject={onAddProject} />
+            </Route>
+            <Route exact path="/books/:id">
+              <ProjectDetail />
+            </Route>
+             <Route path="/books/category/:category">
+              <ProjectList
+                projects={projects}
+                onProjectDelete={onProjectDelete}
+                setSelectedCategory={setSelectedCategory}
+                setSearchQuery={setSearchQuery}
+                />
+            </Route>
+            <Route path="/books">
+              <ProjectList
+                projects={projects}
+                onProjectDelete={onProjectDelete}
+                setSelectedCategory={setSelectedCategory}
+                setSearchQuery={setSearchQuery}
+                />
+            </Route>
+          </Switch>
+        </>
+      )
+    }
+    
+    export default ProjectsContainer;

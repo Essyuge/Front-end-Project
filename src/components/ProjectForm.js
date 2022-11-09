@@ -29,4 +29,11 @@ const initialState = {
           body: JSON.stringify({ ...formData, claps: 0 }),
         };
 
+        fetch("http://localhost:4000/projects", configObj)
+        .then((resp) => resp.json())
+        .then((project) => {
+          onAddProject(project);
+          history.push("/projects")
+        });
+    };
     

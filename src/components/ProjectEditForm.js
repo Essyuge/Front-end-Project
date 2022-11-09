@@ -26,4 +26,17 @@ const initialState = {
               .then((project) => setFormData(project));
           }, [id]);
           
-          
+          const handleChange = (e) => {
+            const { name, value } = e.target;
+            setFormData(formData => ({ ...formData, [name]: value }));
+          };
+        
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            const configObj = {
+              method: "PATCH",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(formData),
+            };

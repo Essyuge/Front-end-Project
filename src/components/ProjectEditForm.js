@@ -40,3 +40,11 @@ const initialState = {
               },
               body: JSON.stringify(formData),
             };
+
+            fetch(`http://localhost:4000/projects/${id}`, configObj)
+      .then((resp) => resp.json())
+      .then((updatedProj) => {
+        onUpdateProject(updatedProj);
+        history.push("/projects")
+      });
+  };

@@ -12,3 +12,22 @@ const Home = () => {
         setRecentProjects(recentProjects);
       });
   }, []);
+
+  return (
+    <section className="box">
+      <h2 style={{ fontSize: "3rem" }}>View Favorite Books.</h2>
+    
+      <h3>Recently Added Book:</h3>
+      {recentProjects.map((project) => (
+        <p key={project.id}>{project.name}</p>
+      ))}
+      <div style={{ margin: "1rem 0" }}>
+        <Link className="button" to="/projects">
+          View All Books
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default Home;

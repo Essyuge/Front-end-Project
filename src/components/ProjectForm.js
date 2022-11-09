@@ -9,3 +9,14 @@ const initialState = {
     image:"",
     category:""
   };
+
+  const ProjectForm = ({ onAddProject }) => {
+    const [formData, setFormData] = useState(initialState);
+    const history = useHistory();
+  
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData((formData) => ({ ...formData, [name]: value }));
+    };
+
+    

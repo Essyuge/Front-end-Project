@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import ProjectForm from "./ProjectForm";
 import ProjectList from "./ProjectList";
 import ProjectEditForm from "./ProjectEditForm";
-import ProjectDetail from "./ProjectDetail";
+
 
 function ProjectsContainer() {
     const [projects, setProjects] = useState([]);
@@ -56,7 +56,6 @@ function ProjectsContainer() {
               <ProjectForm onAddProject={onAddProject} />
             </Route>
             <Route exact path="/books/:id">
-              <ProjectDetail />
             </Route>
              <Route path="/books/category/:category">
               <ProjectList

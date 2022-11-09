@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 
 const initialState = {
-
   title:"",
   author:"",
   summary:"",
@@ -10,10 +9,12 @@ const initialState = {
   image:"",
   category:""
   };
-const ProjectEditForm = ({ onUpdateProject }) => {
+
+ const ProjectEditForm = ({ onUpdateProject }) => {
   const [formData, setFormData] = useState(initialState);
 
-  const { title, author, summary, price, image ,category} = formData;
+  const {title, author, summary, price, image ,category} = formData;
+
 
   const { id } = useParams();
   const history = useHistory()
@@ -41,7 +42,7 @@ const ProjectEditForm = ({ onUpdateProject }) => {
       body: JSON.stringify(formData),
     };
 
-    fetch(`http://localhost:4000/projects/${id}`, configObj)
+    fetch(`http://localhost:4000/books/${id}`, configObj)
       .then((resp) => resp.json())
       .then((updatedProj) => {
         onUpdateProject(updatedProj);
@@ -85,8 +86,8 @@ const ProjectEditForm = ({ onUpdateProject }) => {
        <select 
        name="category" 
        id="category"
-       onChange={handleChange}
        value={formData.category}
+       onChange={handleChange}
        >
 
        <option>Select category</option>

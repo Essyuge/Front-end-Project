@@ -19,4 +19,14 @@ const initialState = {
       setFormData((formData) => ({ ...formData, [name]: value }));
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const configObj = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ ...formData, claps: 0 }),
+        };
+
     

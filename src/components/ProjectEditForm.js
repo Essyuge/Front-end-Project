@@ -12,7 +12,7 @@ const initialState = {
 
  const ProjectEditForm = ({ onUpdateProject }) => {
   const [formData, setFormData] = useState(initialState);
-
+  
   const {title, author, summary, price, image ,category} = formData;
 
 
@@ -42,7 +42,7 @@ const initialState = {
       body: JSON.stringify(formData),
     };
 
-    fetch(`http://localhost:4000/books/${id}`, configObj)
+    fetch(`http://localhost:4000/projects/${id}`, configObj)
       .then((resp) => resp.json())
       .then((updatedProj) => {
         onUpdateProject(updatedProj);

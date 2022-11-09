@@ -26,7 +26,7 @@ const initialState = {
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({ ...formData, claps: 0 }),
+          body: JSON.stringify({ ...formData}),
         };
 
         fetch("http://localhost:4000/projects", configObj)

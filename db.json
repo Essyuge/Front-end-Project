@@ -25,7 +25,7 @@
       "summary": "Sixteen-year-old Evie is forced to face the truth about her supernatural past.",
       "category": "Thiller",
       "image": "https://covers.openlibrary.org/w/id/8787911-M.jpg",
-      "price": 1600
+      "price": "1600"
     },
     {
       "id": "8",
@@ -38,12 +38,12 @@
     },
     {
       "id": "10",
-      "title": "IT",
+      "title": "Boook",
       "author": "Stephen King",
       "summary": "Scary",
       "category": "Thiller",
       "image": "https://covers.openlibrary.org/w/id/8569284-M.jpg",
-      "price": 2000
+      "price": "10000"
     },
     {
       "id": "12",
@@ -70,16 +70,7 @@
       "summary": "Statistics terms",
       "category": "Textbook",
       "image": "https://covers.openlibrary.org/w/id/4522317-M.jpg",
-      "price": 5000
-    },
-    {
-      "id": "15",
-      "title": "It Ends With Us",
-      "author": "Coolen Hoover",
-      "summary": "Lily has always had it easy",
-      "category": "Romance",
-      "image": "https://covers.openlibrary.org/b/id/10473609-M.jpg",
-      "price": 1400
+      "price": "1000"
     }
   ]
 }

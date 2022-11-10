@@ -36,7 +36,7 @@ const ProjectListItem = ({
         </section>
   
         <footer className="extra">
-          <span className="badge blue">Category {category}</span>
+          <span className="badge blue">{category}</span>
           <div className="manage">
             <Link className="button" to={`/books/${id}/edit`}>
               <FaPencilAlt />

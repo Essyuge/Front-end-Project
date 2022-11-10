@@ -6,7 +6,7 @@ function About() {
       <h1>ABOUT</h1><br></br>
     
       <ul><br></br>
-        <li>Read Free Library Books Online</li>
+        <li>Free Library Books Online</li>
         <li>Keep Track of your Favourite Books</li>
         <li>Try Fulltext Search</li>
 

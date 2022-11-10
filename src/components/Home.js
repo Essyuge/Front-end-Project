@@ -22,7 +22,7 @@ const Home = () => {
         <p key={project.id}>{project.name}</p>
       ))}
       <div style={{ margin: "1rem 0" }}>
-        <Link className="button" to="/projects">
+        <Link className="button" to="/books">
           View All Books
         </Link>
       </div>

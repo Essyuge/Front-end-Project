@@ -22,7 +22,7 @@ const initialState = {
 
 
   useEffect(() => {
-    fetch(`http://localhost:9292/books/${id}`)
+    fetch(`http://localhost:4000/projects/${id}`)
       .then((res) => res.json())
       .then((project) => setFormData(project));
   }, [id]);

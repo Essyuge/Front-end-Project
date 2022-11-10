@@ -22,7 +22,7 @@ const initialState = {
 
 
   useEffect(() => {
-    fetch(`http://localhost:4000/projects/${id}`)
+    fetch(`http://localhost:9292/books/${id}`)
       .then((res) => res.json())
       .then((project) => setFormData(project));
   }, [id]);
@@ -46,7 +46,7 @@ const initialState = {
       .then((resp) => resp.json())
       .then((updatedProj) => {
         onUpdateProject(updatedProj);
-        history.push("/projects")
+        history.push("/books")
       });
   };
 

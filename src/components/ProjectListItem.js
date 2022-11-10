@@ -39,7 +39,7 @@ const ProjectListItem = ({
           <span className="badge blue">{category}</span>
           <div className="manage">
             <Link className="button" to={`/books/${id}/edit`}>
-              <FaPencilAlt />
+              <FaPencilAlt onClick={handleEditClick} />
             </Link>
             <button onClick={handleDeleteClick}>
               <FaTrash />

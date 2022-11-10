@@ -33,7 +33,7 @@ const initialState = {
         .then((resp) => resp.json())
         .then((project) => {
           onAddProject(project);
-          history.push("/projects")
+          history.push("/books")
         });
     };
     return (

@@ -38,7 +38,7 @@ const ProjectListItem = ({
         <footer className="extra">
           <span className="badge blue">Category {category}</span>
           <div className="manage">
-            <Link className="button" to={`/projects/${id}/edit`}>
+            <Link className="button" to={`/books/${id}/edit`}>
               <FaPencilAlt />
             </Link>
             <button onClick={handleDeleteClick}>

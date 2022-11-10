@@ -60,7 +60,7 @@ const initialState = {
         id="title" 
         name="title"
         onChange={handleChange}
-        value={formData.title}
+        value={title}
         />
 
       <label htmlFor="author">Author</label>
@@ -69,7 +69,7 @@ const initialState = {
        id="author" 
        name="author"
        onChange={handleChange}
-       value={formData.author}
+       value={author}
        />
        
 
@@ -78,7 +78,7 @@ const initialState = {
        id="summary" 
        name="summary"
        onChange={handleChange}
-       value={formData.summary}
+       value={summary}
        ></textarea>
       
 
@@ -86,7 +86,7 @@ const initialState = {
        <select 
        name="category" 
        id="category"
-       value={formData.category}
+       value={category}
        onChange={handleChange}
        >
 
@@ -106,7 +106,7 @@ const initialState = {
         id="image" 
         name="image"
         onChange={handleChange}
-        value={formData.image}
+        value={image}
         />
 
         <label htmlFor="price">Price</label>
@@ -115,7 +115,7 @@ const initialState = {
        id="price" 
        name="price"
        onChange={handleChange}
-       value={formData.price}
+       value={price}
        
        />
 

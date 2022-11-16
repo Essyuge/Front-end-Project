@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Phase 3 Group Project 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project & Personal Details
+**Name:** Esther Wanjiru, Gibert Kipkemoi and Brenda Kinyanjui.
+
+**Project Name:** Open Library.
+
+**Project Site:** https://front-end-project-xi.vercel.app/books
+
+**Github frontend:** **link:** https://github.com/Essyuge/Front-end-Project
+ 
+**Github backend:** **link:** https://github.com/Essyuge/Back-end-project
+ 
 
 ## Available Scripts
 
-In the project directory, you can run:
+**Backend:**
 
-### `npm start`
+```console
+$ bundle exec rake server
+$ bundle exec rake db:create
+$ bundle exec rake db:create_migration
+$ bundle exec rake db:seed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+**Frontend:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```console
+ npm run build
+ npm start
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
+### Backend
+Ruby,sinatra,sqlite3.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
+HTML,CSS,JAVASCRIPT & REACT.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Introduction
+The project consist of two different repositories the backend and the frontend.
+The frontend will be responsible for manipulating data hosted In the backend.
 
-### `npm run eject`
+The project itself is a platform that allows Users to view and add books that interest them,at the same time they can remove or update anybook as their liking.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Requirements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For this project, I:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Used Active Record to interact with a database.
+- Had two models with a one-to-many relationship.
+- I set up the following API routes in Sinatra:
+  - create,update and read actions for both models
+  - full CRUD capability for the the models
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Used good OO design patterns. 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## LICENSE
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License
 
-### Code Splitting
+Copyright (c) [2022] [Esther Uge]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Analyzing the Bundle Size
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
